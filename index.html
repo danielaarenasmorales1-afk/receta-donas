@@ -67,7 +67,7 @@ p{
     transform: scale(1.05);
 }
 
-/* ===== COLUMNAS ===== */
+/* COLUMNAS */
 .columnas{
     display: flex;
     justify-content: space-between;
@@ -83,7 +83,6 @@ p{
     text-align:left;
 }
 
-/* LISTAS */
 ul{
     background:#ffe3f2;
     padding:20px;
@@ -96,7 +95,6 @@ ol{
     border-radius:15px;
 }
 
-/* ENLACE */
 a{
     color:#ff1493;
     font-weight: bold;
@@ -115,6 +113,31 @@ footer{
     margin-top:40px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+/* ===== RESPONSIVE PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+    h1{
+        font-size: 38px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    .columnas{
+        flex-direction: column;
+    }
+
+    .imagen img{
+        width: 100%;
+    }
+
 }
 
 </style>
@@ -136,7 +159,6 @@ Las <strong>donas caseras</strong> son suaves, dulces y completamente irresistib
     <img src="donas.png" alt="Donas decoradas">
 </div>
 
-<!-- COLUMNAS -->
 <div class="columnas">
 
 <div class="col">
@@ -166,7 +188,7 @@ Las <strong>donas caseras</strong> son suaves, dulces y completamente irresistib
 
 </div>
 
-<p style="margin-top:30px; text-align:center;">
+<p style="margin-top:30px;">
 Fuente:
 <a href="https://www.recetasgratis.net" target="_blank">
 RecetasGratis
